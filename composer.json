@@ -1,0 +1,33 @@
+{
+    "name": "siddik-web/s3-bucket-manager",
+    "description": "Laravel package for managing AWS S3 bucket operations",
+    "version": "1.0.0",
+    "type": "library",
+    "require": {
+        "php": "^7.3|^8.0",
+        "aws/aws-sdk-php": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RocksCoder\\S3BucketManager\\S3BucketManagerServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RocksCoder\\S3BucketManager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Md Siddiqur Rahman",
+            "email": "siddikcoder@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^11.4"
+    }
+}

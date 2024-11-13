@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php" colors="true">
+    <testsuites>
+        <testsuite name="Unit">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <!-- Define any environment variables for testing, such as AWS credentials if needed -->
+        <env name="AWS_ACCESS_KEY_ID" value="test-key"/>
+        <env name="AWS_SECRET_ACCESS_KEY" value="test-secret"/>
+        <env name="AWS_BUCKET_NAME" value="test-bucket"/>
+    </php>
+</phpunit>
